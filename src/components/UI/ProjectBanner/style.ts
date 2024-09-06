@@ -27,11 +27,11 @@ export const Container = styled.div`
   &::before {
     content: '';
     position: absolute;
-    top: -3px;
-    left: -3px;
+    top: -2px;
+    left: -2px;
     width: 100%;
     height: 100%;
-    border: 3px solid ${({ theme }) => theme.COLORS.HIGHLIGHT};
+    border: 2px solid ${({ theme }) => theme.COLORS.HIGHLIGHT};
     opacity: 0;
     transition: opacity 0.4s ease;
     pointer-events: none; 

@@ -1,7 +1,40 @@
+import { gql, useQuery } from "@apollo/client";
 import ProjectBanner from "../../UI/ProjectBanner";
 import ShowMore from "../../UI/ShowMore";
 import { Container, Title, ProjectList } from "./style";
+import { IProject } from "../../../types/Project";
+import Spinner from "../../UI/Spinner";
+
+const GET_PROJECTS_DATA = gql`
+  query GetHighlited {
+    highlightedProjects {
+      id
+      projectName
+      summary
+      imageURL
+    }
+  }
+`;
+
 function ShortProjects() {
+  const { error, loading, data } = useQuery(GET_PROJECTS_DATA);
+
+  if (loading) return <Spinner />
+  if (error) return (
+    <div 
+      style={{ 
+        height: 400, 
+        display: "grid", 
+        placeItems: "center",
+        marginTop: -100,
+        textAlign: "center"
+      }}
+      data-aos="fade-up"
+    >
+      An error occurred while loading the projects
+    </div>
+  );
+
   return (
     <Container id="projects">
       <Title data-aos="fade-up">
@@ -9,26 +42,19 @@ function ShortProjects() {
       </Title>
 
       <ProjectList>
-        <ProjectBanner 
-          image="https://github.com/gianlucacarra.png" 
-          name="Project Name Here"
-          short=" asdadsa dasdadadsadasdasdasdas asdsadadasdassdas dasdasdasdasdaddaLasdadsa dasdadadsadasdasdasdas asdsadadasdassdas dasdasdasdasdaddaLasdadsa dasdadadsadasdasdasdas asdsadadasdassdas dasdasdasdasdaddaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
-          page="1"
-        />
-
-        <ProjectBanner 
-          image="https://github.com/gianlucacarra.png" 
-          name="Project Name Here"
-          short="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
-          page="/name"
-        />
-
-        <ProjectBanner 
-          image="https://github.com/gianlucacarra.png" 
-          name="Project Name Here"
-          short="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
-          page="/name"
-        />
+        {
+          data.highlightedProjects.map((project: IProject) => {
+            return (
+              <ProjectBanner 
+                key={project.id}
+                image={project.imageURL}
+                name={project.projectName}
+                short={project.summary}
+                page={project.id}
+              />
+            );
+          })
+        }
 
         <ShowMore href="/projects" name="See more projects" />
       </ProjectList>

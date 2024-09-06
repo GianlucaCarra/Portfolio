@@ -12,7 +12,7 @@ function ProjectBanner({ image, name, short, page }: IProjectBanner) {
         <p className="short">{short}</p>
 
         <RMButton href={`/project/${page}`}>
-          Read more
+          See more
         </RMButton>
       </Information>
     </Container>

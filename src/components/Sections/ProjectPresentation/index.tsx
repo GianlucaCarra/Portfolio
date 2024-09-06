@@ -1,43 +1,50 @@
 import { gql, useQuery } from "@apollo/client";
 import Link from "../../UI/Link";
 import { Container, Title, Description, Links } from "./style";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import Spinner from "../../UI/Spinner";
 
 const GET_PROJECT_DATA = gql`
-    query GetProject($id: ID!) {
-      project(id: $id) {
-        projectName,
-        summary,
-        imageURL,
-        githubURL,
-        appURL
-      }
+  query GetProject($id: String) {
+    project(id: $id) {
+      projectName
+      summary
+      imageURL
+      githubURL
+      appURL
     }
-  `;
+  }
+`;
 
 function ProjectPresentation() {
-  const id = useParams();  
+  const { id } = useParams();  
+  const navigate = useNavigate();
   const { loading, error, data } = useQuery(GET_PROJECT_DATA, {
     variables: { id }
   });
 
-  console.log(data)
-  if (loading) 
-  if (error) 
+  if (loading) return <Spinner />
+  if (error || !data.project) navigate("/notfound");
 
+  const {
+    projectName,
+    summary,
+    imageURL,
+    githubURL,
+    appURL,
+  } = data.project;
+  
   return (
     <Container>
-      <Title>{data.projectName}</Title>
+      <Title>{projectName}</Title>
 
-      <img src="https://github.com/gianlucacarra.png" alt="" loading="lazy" />
+      <img src={imageURL} alt="" loading="lazy" />
 
       <Description>
         <h2>Description:</h2>
 
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat amet numquam 
-          magni facere odio animi, unde voluptatem quidem molestias iure dignissimos 
-          nobis cum at quibusdam aperiam similique tempore laboriosam. Reprehenderit?
+          {summary}
         </p>
       </Description>
 
@@ -45,8 +52,8 @@ function ProjectPresentation() {
         <h2>Links:</h2>
 
         <div className="links-list">
-          <Link name={"GitHub Repository"} href={"https://github.com/gianlucacarra"} />
-          <Link name={"Website Page"} href={"https://github.com/gianlucacarra"} />
+          <Link name={"GitHub Repository"} href={githubURL} />
+          {appURL !== "" && <Link name={"Website Page"} href={"https://github.com/gianlucacarra"} />}
         </div>
       </Links>
     </Container>
