@@ -5,21 +5,23 @@ export const Container = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
-  margin-left: -170px;
-  width: calc(100% + 340px);
-  padding: 15px;
+  margin-left: -40px;
+  width: calc(100% + 40px * 2);
+  padding: 20px;
   gap: 15px;
 
   background-color: ${({ theme }) => theme.COLORS.BLACK_200};
 
   > h2 {
-    font-size: 1.2rem;
+    font-size: .9rem;
     font-weight: 300;
   }
 
   > a {
     display: flex;
+    font-size: .9rem;
     justify-content: center;                                                          
     align-items: center;
     gap: 10px;
@@ -28,12 +30,12 @@ export const Container = styled.footer`
   }
 
   .separator {
-    height: 25px;
-    width: 2px;
+    height: 1px;
+    width: 25px;
     background-color: ${({ theme }) => theme.COLORS.WHITE};
   }
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
+  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
     padding: 10px;
     margin-left: -20px;
     width: calc(100% + 40px);
@@ -81,5 +83,5 @@ export const Container = styled.footer`
     > h2 {
       font-size: 1.1rem;
     }
-  }
+  } */
 `;

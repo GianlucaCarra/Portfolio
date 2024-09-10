@@ -6,8 +6,9 @@ export const Container = styled.a`
   text-decoration: none;
   font-weight: 200;
   width: fit-content;
+  font-size: .9rem;
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
+  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
     font-size: .8rem;
   }
 
@@ -17,5 +18,5 @@ export const Container = styled.a`
 
   @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
 
-  }
+  } */
 `;

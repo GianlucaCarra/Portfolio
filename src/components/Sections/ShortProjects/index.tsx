@@ -16,6 +16,27 @@ const GET_PROJECTS_DATA = gql`
   }
 `;
 
+// const data = {
+//   highlightedProjects: [
+//     {
+//       id: "1",
+//       imageURL: "https://github.com/gianlucacarra.png",
+//       projectName: "Name test",
+//       summary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore impedit vero vel ipsam eos quos exercitationem, quo numquam pariatur alias, enim atque molestias fuga voluptate quam debitis itaque officia sunt?",
+//     },{
+//       id: "2",
+//       imageURL: "https://github.com/gianlucacarra.png",
+//       projectName: "Name test",
+//       summary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore impedit vero vel ipsam eos quos exercitationem, quo numquam pariatur alias, enim atque molestias fuga voluptate quam debitis itaque officia sunt?",
+//     },{
+//       id: "3",
+//       imageURL: "https://github.com/gianlucacarra.png",
+//       projectName: "Name test",
+//       summary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore impedit vero vel ipsam eos quos exercitationem, quo numquam pariatur alias, enim atque molestias fuga voluptate quam debitis itaque officia sunt?",
+//     },
+//   ]
+// }
+
 function ShortProjects() {
   const { error, loading, data } = useQuery(GET_PROJECTS_DATA);
 

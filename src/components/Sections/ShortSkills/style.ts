@@ -10,9 +10,9 @@ export const Container = styled.div`
 
   gap: 75px;
 
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
+  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
     gap: 40px;
     margin-bottom: 40px;   
   }
@@ -24,15 +24,15 @@ export const Container = styled.div`
 
   @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
     margin-bottom: 80px;
-  }
+  } */
 `;
 
 export const Title = styled.h1`
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
+  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
     font-size: .9rem;
   }
 
@@ -42,7 +42,7 @@ export const Title = styled.h1`
 
   @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
     font-size: 1.4rem;
-  }
+  } */
 `;
 
 export const SkillList = styled.div`
@@ -60,8 +60,7 @@ export const SkillGrade = styled.div`
   flex-wrap: wrap;
   gap: 20px;
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-  /* Estilos para dispositivos pequenos */
+  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
   }
 
   @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
@@ -70,6 +69,6 @@ export const SkillGrade = styled.div`
 
   @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
     gap: 15px;
-  }
+  } */
 `;
 

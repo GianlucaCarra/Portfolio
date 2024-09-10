@@ -7,11 +7,11 @@ export const Container = styled.a`
   align-items: center;
 
   gap: 15px;
-  padding: 25px;
+  padding: 20px;
   border-radius: 10px;
   width: 100%;
 
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 300;
 
   text-decoration: none;
@@ -20,17 +20,17 @@ export const Container = styled.a`
   background-color: ${({ theme }) => theme.COLORS.BLACK_200};
 
   svg {
-    font-size: 2rem;
+    font-size: 1.4rem;
   } 
   
   &::before {
     content: '';
     position: absolute;
-    top: -5px;
+    top: -3px;
     left: 0;
     width: 100%;
     height: 100%;
-    border-bottom: 5px solid ${({ theme }) => theme.COLORS.HIGHLIGHT};
+    border-bottom: 3px solid ${({ theme }) => theme.COLORS.HIGHLIGHT};
     opacity: 0;
     transition: opacity 0.4s ease;
     pointer-events: none; 
@@ -46,7 +46,7 @@ export const Container = styled.a`
     cursor: pointer;
   }
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
+  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
     font-size: .8rem;
     padding: 10px;
     gap: 10px;
@@ -85,5 +85,5 @@ export const Container = styled.a`
     > svg {
       font-size: 1rem;
     }
-  }
+  } */
 `;

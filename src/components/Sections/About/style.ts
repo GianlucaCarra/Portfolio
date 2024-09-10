@@ -7,61 +7,79 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
 
-  gap: 75px;
+  gap: 30px;
 
-  margin-bottom: 150px;
+  margin-bottom: 60px;
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
+  /* gap: 75px;
+
+  margin-bottom: 150px; */
+
+  /* @media (max-width:${DEVICE_BREAKPOINTS.extraSmall}) {
     gap: 20px;
     margin-bottom: 40px;   
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
+  @media (max-width: ${DEVICE_BREAKPOINTS.small}) {
+    gap: 20px;
+    margin-bottom: 40px;   
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.medium}) {
     gap: 40px;
     margin-bottom: 80px;   
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
+  @media (max-width: ${DEVICE_BREAKPOINTS.large}) {
     gap: 60px;
     margin-bottom: 120px; 
-  }
+  } */
 `;
 
 export const Title = styled.h1`
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-    font-size: .9rem;
-
+  /* @media (max-width:${DEVICE_BREAKPOINTS.extraSmall}) {
+    gap: 20px;
+    margin-bottom: 40px;   
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    font-size: 1.2rem;
+  @media (max-width: ${DEVICE_BREAKPOINTS.small}) {
+    gap: 20px;
+    margin-bottom: 40px;   
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
-    font-size: 1.4rem;
+  @media (max-width: ${DEVICE_BREAKPOINTS.medium}) {
+    gap: 40px;
+    margin-bottom: 80px;   
   }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.large}) {
+    gap: 60px;
+    margin-bottom: 120px; 
+  } */
 `;
 
 export const Introduction = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 
   width: 100%;
+  gap: 30px;
 
   > img {
-    height: 400px;
-    width: 400px;
+    height: 200px;
+    width: 200px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid ${({ theme }) => theme.COLORS.HIGHLIGHT};
+    border: 2px solid ${({ theme }) => theme.COLORS.HIGHLIGHT};
   }
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
+  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
     flex-direction: column;
     justify-content: none;
     gap: 20px;
@@ -71,9 +89,9 @@ export const Introduction = styled.div`
       width: 200px;
       border: 2px solid ${({ theme }) => theme.COLORS.HIGHLIGHT};
     }
-  }
+  } */
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
+  /* @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
     > img {
       height: 220px;
       width: 220px;
@@ -85,7 +103,7 @@ export const Introduction = styled.div`
       height: 300px;
       width: 300px;
     }
-  }
+  } */
 `;
 
 export const List = styled.ul`
@@ -94,9 +112,9 @@ export const List = styled.ul`
 
   list-style: none;
 
-  gap: 40px;
+  gap: 20px;
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
+  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
     gap: 15px;
   }
 
@@ -106,5 +124,5 @@ export const List = styled.ul`
 
   @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
     gap: 30px;
-  }
+  } */
 `;
