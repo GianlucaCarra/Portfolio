@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import Footer from "../../components/UI/Footer";
 import ProjectsHome from "../../components/Sections/ProjectsHome";
 import Projects from "../../components/Sections/Projects";
+import Contact from "../../components/Sections/Contact";
 
 function ProjectsPage() {
   useEffect(() => {
@@ -21,6 +22,8 @@ function ProjectsPage() {
       <ProjectsHome />
 
       <Projects />
+
+      <Contact />
       
       <Footer />
     </Container>

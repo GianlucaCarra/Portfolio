@@ -9,17 +9,15 @@ export const Container = styled.div`
 
   height: 100vh;
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-  /* Estilos para dispositivos pequenos */
+  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
   }
 
   @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    /* Estilos para tablets e smartphones em orientação paisagem */
   }
 
   @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
     
-  }
+  } */
 `;
 
 export const Introduction = styled(motion.div)`
@@ -28,21 +26,15 @@ export const Introduction = styled(motion.div)`
   align-items: center;
   justify-content: center;
 
-  gap: 25px;
+  gap: 20px;
 
   > h1 {
-    font-size: 4rem;
+    font-size: 2.2rem;
     font-weight: 500;
     text-align: center;
   }
 
-  > h2 {
-    font-size: 1.3rem;
-    font-weight: 200;
-    text-align: center;
-  }
-
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
+  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
     gap: 10px;
 
     > h1 {
@@ -72,26 +64,26 @@ export const Introduction = styled(motion.div)`
     > h2 {
       font-size: 1.2rem;
     }
-  }
+  } */
 `;
 
 export const ScrollFM = styled.div`
   position: absolute;
-  bottom: 13%;
+  bottom: 16%;
 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 
-  font-size: 1.1rem;
+  font-size: 1rem;
 
   > svg {
     margin-top: 5px;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
+  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
     font-size: .8rem;
     bottom: 20%;
 
@@ -104,5 +96,5 @@ export const ScrollFM = styled.div`
   @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
     font-size: 1rem;
     bottom: 15%;
-  }
+  } */
 `;

@@ -16,47 +16,6 @@ const GET_SKILLS_DATA = gql`
   }
 `;
 
-// const data = {
-//   highlightedSkills: [
-//       {
-//         id: "1",
-//         imageURL: "https://github.com/gianlucacarra.png",
-//         skill: "Name test",
-//         summary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore impedit vero vel ipsam eos quos exercitationem, quo numquam pariatur alias, enim atque molestias fuga voluptate quam debitis itaque officia sunt?",
-//       },{
-//         id: "2",
-//         imageURL: "https://github.com/gianlucacarra.png",
-//         skill: "Name test",
-//         summary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore impedit vero vel ipsam eos quos exercitationem, quo numquam pariatur alias, enim atque molestias fuga voluptate quam debitis itaque officia sunt?",
-//       },{
-//         id: "3",
-//         imageURL: "https://github.com/gianlucacarra.png",
-//         skill: "Name test",
-//         summary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore impedit vero vel ipsam eos quos exercitationem, quo numquam pariatur alias, enim atque molestias fuga voluptate quam debitis itaque officia sunt?",
-//       },{
-//         id: "4",
-//         imageURL: "https://github.com/gianlucacarra.png",
-//         skill: "Name test",
-//         summary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore impedit vero vel ipsam eos quos exercitationem, quo numquam pariatur alias, enim atque molestias fuga voluptate quam debitis itaque officia sunt?",
-//       },{
-//         id: "5",
-//         imageURL: "https://github.com/gianlucacarra.png",
-//         skill: "Name test",
-//         summary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore impedit vero vel ipsam eos quos exercitationem, quo numquam pariatur alias, enim atque molestias fuga voluptate quam debitis itaque officia sunt?",
-//       },{
-//         id: "6",
-//         imageURL: "https://github.com/gianlucacarra.png",
-//         skill: "Name test",
-//         summary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore impedit vero vel ipsam eos quos exercitationem, quo numquam pariatur alias, enim atque molestias fuga voluptate quam debitis itaque officia sunt?",
-//       },{
-//         id: "7",
-//         imageURL: "https://github.com/gianlucacarra.png",
-//         skill: "Name test",
-//         summary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore impedit vero vel ipsam eos quos exercitationem, quo numquam pariatur alias, enim atque molestias fuga voluptate quam debitis itaque officia sunt?",
-//       },
-//     ]
-//   }
-
 function ShortSkills() {
   const { loading, error, data } = useQuery(GET_SKILLS_DATA);
 

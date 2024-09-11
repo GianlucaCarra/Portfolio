@@ -7,11 +7,11 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   
-  gap: 40px;
+  gap: 20px;
 
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
+  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
     gap: 15px;
   }
 
@@ -21,5 +21,5 @@ export const Container = styled.div`
 
   @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
     gap: 30px;
-  }
+  } */
 `;

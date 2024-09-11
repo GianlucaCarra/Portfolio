@@ -9,10 +9,9 @@ export const Container = styled.div`
   flex-wrap: wrap;
   gap: 20px;
 
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-  /* Estilos para dispositivos pequenos */
+  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
   }
 
   @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
@@ -21,5 +20,5 @@ export const Container = styled.div`
 
   @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
     gap: 15px;
-  }
+  } */
 `;

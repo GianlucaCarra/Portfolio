@@ -15,8 +15,9 @@ export const Container = styled.header`
   padding: 16px;
 
   backdrop-filter: blur(10px);
+  display: none;
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
+  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
     display: none;
   }
 
@@ -26,7 +27,7 @@ export const Container = styled.header`
 
   @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
 
-  }
+  } */
 `;
 
 export const Navigation = styled.nav`

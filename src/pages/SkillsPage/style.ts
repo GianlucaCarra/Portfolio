@@ -5,9 +5,9 @@ export const Container = styled.div`
   max-width: 2560px;
   width: 100dvw;
   margin: 0 auto;
-  padding: 0 170px;
+  padding: 0 40px;
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
+  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
     padding: 0 20px;  
   }
 
@@ -17,5 +17,5 @@ export const Container = styled.div`
 
   @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
     padding: 0 110px;
-  }
+  } */
 `;
