@@ -30,17 +30,44 @@ export const Introduction = styled(motion.div)`
     text-align: center;
   }
 
-  @media (max-width:${DEVICE_BREAKPOINTS.extraSmall}) {
- 
+  @media (min-width:${DEVICE_BREAKPOINTS.extraSmall}) and (max-width:${DEVICE_BREAKPOINTS.medium}) {
+    > h1 {
+      font-size: 2.7rem;
+    }
+
+    > h2 {
+      font-size: 1.2rem;
+    }
   }
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.small}) { 
+  @media (min-width:${DEVICE_BREAKPOINTS.medium}) and (max-width:${DEVICE_BREAKPOINTS.large}) { 
+    > h1 {
+      font-size: 3rem;
+    }
+
+    > h2 {
+      font-size: 1.5rem;
+    }
   }
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.medium}) {
+  @media (min-width:${DEVICE_BREAKPOINTS.large}) and (max-width:${DEVICE_BREAKPOINTS.extraLarge}) {
+    > h1 {
+      font-size: 3.8rem;
+    }
+
+    > h2 {
+      font-size: 1.5rem;
+    }
   }
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.large}) {
+  @media (min-width: ${DEVICE_BREAKPOINTS.extraLarge}) {
+    > h1 {
+      font-size: 4rem;
+    }
+
+    > h2 {
+      font-size: 1.5rem;
+    }
   } 
 `;
 
@@ -60,21 +87,40 @@ export const ScrollFM = styled.div`
     font-size: 1.5rem;
   }
 
-  /* @media (max-width:${DEVICE_BREAKPOINTS.extraSmall}) {
-    gap: 20px;
-    margin-bottom: 40px;   
+  @media (min-width:${DEVICE_BREAKPOINTS.extraSmall}) and (max-width:${DEVICE_BREAKPOINTS.small}) {
+    font-size: 1.2rem;
+
+    > svg {
+      margin-top: 7px;
+      font-size: 1.6rem;
+    }
   }
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    gap: 20px;
-    margin-bottom: 40px;   
+  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width:${DEVICE_BREAKPOINTS.medium}) {
+    font-size: 1.1rem;
+
+    > svg {
+      margin-top: 7px;
+      font-size: 1.7rem;
+    } 
   }
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.medium}) {
-    gap: 40px;
-    margin-bottom: 80px;   
+  @media (min-width: ${DEVICE_BREAKPOINTS.medium}) and (max-width:${DEVICE_BREAKPOINTS.large}) {
+    font-size: 1.2rem;
+
+    > svg {
+      margin-top: 7px;
+      font-size: 1.9rem;
+    }   
   }
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.large}) {
-  } */
+  @media (min-width: ${DEVICE_BREAKPOINTS.large}) {
+    bottom: 10%;
+    font-size: 1.3rem;
+
+    > svg {
+      margin-top: 7px;
+      font-size: 1.9rem;
+    }   
+  }
 `;
