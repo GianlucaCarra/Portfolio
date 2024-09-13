@@ -26,7 +26,7 @@ export const Container = styled.div`
     transform: translateX(-50%);
     height: 80px;
     width: 80px;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
   }
 
