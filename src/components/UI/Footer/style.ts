@@ -35,53 +35,30 @@ export const Container = styled.footer`
     background-color: ${({ theme }) => theme.COLORS.WHITE};
   }
 
-  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-    padding: 10px;
-    margin-left: -20px;
-    width: calc(100% + 40px);
+  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
+    margin-left: -50px;
+    width: calc(100% + 50px * 2);
+  }
 
-    flex-direction: column;
-
-    > h2 {
-      font-size: .6rem;
-    }
-
-    > a {
-      font-size: .6rem;
-
-      > svg {
-        font-size: 1rem;
-      }
-    }  
+  @media (min-width: ${DEVICE_BREAKPOINTS.medium}) {
+    flex-direction: row;
 
     .separator {
-      height: 1px;
-      width: 10%;
+      height: 25px;
+      width: 1px;
       background-color: ${({ theme }) => theme.COLORS.WHITE};
     }
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    padding: 10px;
-    margin-left: -80px;
-    width: calc(100% + 160px);
+  @media (min-width: ${DEVICE_BREAKPOINTS.medium}) and (max-width: ${DEVICE_BREAKPOINTS.large}) {
+    flex-direction: row;
 
-    > h2 {
-      font-size: .9rem;
-    }
-
-    > a {
-      font-size: .9rem;
-    }
+    margin-left: -100px;
+    width: calc(100% + 100px * 2);
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
-    padding: 10px;
-    margin-left: -110px;
-    width: calc(100% + 220px);
-
-    > h2 {
-      font-size: 1.1rem;
-    }
-  } */
+  @media (min-width: ${DEVICE_BREAKPOINTS.large}) {
+    margin-left: -180px;
+    width: calc(100% + 180px * 2);
+  }
 `;

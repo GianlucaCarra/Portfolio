@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import DEVICE_BREAKPOINTS from "../../../styles/deviceBreakpoints";
 
 export const Container = styled.div`
   position: relative;
@@ -53,47 +52,6 @@ export const Container = styled.div`
     transform: translateY(-10px) !important;
     cursor: pointer;
   }
-
-  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-    max-width: 200px;
-    max-height: 200px;
-    margin-bottom: 15px;
-
-    > img {
-      height: 50px;
-      width: 50px;
-    }  
-
-    &:hover {
-      transform: translateY(-5px) !important;
-    } 
-  }
-
-  /* @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    max-width: 160px;
-    max-height: 160px;
-    margin-bottom: 20px;
-
-    > img {
-      height: 50px;
-      width: 50px;
-    }  
-
-    &:hover {
-      transform: translateY(-5px) !important;
-    }
-  }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
-    max-width: 230px;
-    max-height: 230px;
-    margin-bottom: 25px;
-
-    > img {
-      height: 60px;
-      width: 60px;
-    }
-  } */
 `;
 
 export const Information = styled.div`
@@ -123,41 +81,4 @@ export const Information = styled.div`
     overflow: hidden;
     text-overflow: ellipsis;
   }
-
-  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-    gap: 5px;
-    height: 80%;
-
-    .name {
-      font-size: .8rem;
-    }
-
-    .short {
-      font-size: .7rem;
-    }
-  } */
-
-  /* @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    gap: 5px;
-
-    .name {
-      font-size: .8rem;
-    }
-    
-    .short {
-      font-size: .7rem;
-    }
-  }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
-    gap: 10px;
-
-    .name {
-      font-size: 1.1rem;
-    }
-    
-    .short {
-      font-size: .9rem;
-    }
-  } */
 `;

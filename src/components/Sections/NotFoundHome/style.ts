@@ -9,17 +9,6 @@ export const Container = styled.div`
   overflow: hidden;
 
   height: 100vh;
-
-  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-
-  }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-  }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
-    
-  } */
 `;
 
 export const Introduction = styled(motion.div)`
@@ -53,35 +42,43 @@ export const Introduction = styled(motion.div)`
     }
   }
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-    gap: 10px;
-
-    > h1 {
-      font-size: 1.5rem;
-    }
-
-    > h2 {
-      font-size: .8rem;
-    }
-  }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
+  @media (min-width:${DEVICE_BREAKPOINTS.extraSmall}) and (max-width:${DEVICE_BREAKPOINTS.medium}) {
     > h1 {
       font-size: 2.7rem;
-    }
-
-    > h2 {
-      font-size: 1.1rem;
-    }
-  }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
-    > h1 {
-      font-size: 3rem;
     }
 
     > h2 {
       font-size: 1.2rem;
     }
   }
+
+  @media (min-width:${DEVICE_BREAKPOINTS.medium}) and (max-width:${DEVICE_BREAKPOINTS.large}) { 
+    > h1 {
+      font-size: 3rem;
+    }
+
+    > h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width:${DEVICE_BREAKPOINTS.large}) and (max-width:${DEVICE_BREAKPOINTS.extraLarge}) {
+    > h1 {
+      font-size: 3.8rem;
+    }
+
+    > h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: ${DEVICE_BREAKPOINTS.extraLarge}) {
+    > h1 {
+      font-size: 4rem;
+    }
+
+    > h2 {
+      font-size: 1.5rem;
+    }
+  } 
 `;

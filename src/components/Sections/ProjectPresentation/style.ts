@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 60px 0;
+  margin: 30px 0;
 
   gap: 30px;
 
@@ -19,15 +19,9 @@ export const Container = styled.div`
     object-position: top;
   }
 
-  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
+  @media (min-width:${DEVICE_BREAKPOINTS.medium}) {
+    margin: 65px 0;
   }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-  }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
-    
-  } */
 `;
 
 export const Title = styled.h1`
@@ -35,15 +29,21 @@ export const Title = styled.h1`
   font-weight: 500;
   text-align: center;
 
-  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+
+  @media (min-width:${DEVICE_BREAKPOINTS.extraSmall}) and (max-width:${DEVICE_BREAKPOINTS.small}) {
+    font-size: 1.6rem;
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
+  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width:${DEVICE_BREAKPOINTS.medium}) {
+    font-size: 1.8rem;
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
-    
-  } */
+  @media (min-width: ${DEVICE_BREAKPOINTS.medium}) {  
+    font-size: 2rem;
+  }
 `;
 
 export const Description = styled.div`
@@ -61,17 +61,6 @@ export const Description = styled.div`
     font-size: 1rem;
     font-weight: 200;
   }
-
-  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-
-  }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-  }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
-    
-  } */
 `;
 
 export const Links = styled.div`
@@ -89,17 +78,5 @@ export const Links = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-  /* Estilos para dispositivos pequenos */
-  }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    /* Estilos para tablets e smartphones em orientação paisagem */
-  }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
-    
   }
 `;

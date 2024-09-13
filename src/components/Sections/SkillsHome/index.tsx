@@ -10,6 +10,10 @@ function SkillsHome() {
         <h1>
           SKILLS
         </h1>
+
+        <h2>
+          SEE ALL MY SKILLS HERE
+        </h2>
       </Introduction>
 
       <ScrollFM

@@ -7,15 +7,15 @@ export const Container = styled.div`
   margin: 0 auto;
   padding: 0 40px;
 
-  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-    padding: 0 20px;  
-  }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    padding: 0 80px;
-  }
-
   @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
-    padding: 0 110px;
-  } */
+    padding: 0 50px;
+  }
+
+  @media (min-width: ${DEVICE_BREAKPOINTS.medium}) and (max-width: ${DEVICE_BREAKPOINTS.large}) {
+    padding: 0 100px;
+  }
+
+  @media (min-width: ${DEVICE_BREAKPOINTS.large}) {
+    padding: 0 180px;
+  }
 `;

@@ -11,29 +11,20 @@ export const Container = styled.div`
 
   margin-bottom: 60px;
 
-  /* gap: 75px;
-
-  margin-bottom: 150px; */
-
-  /* @media (max-width:${DEVICE_BREAKPOINTS.extraSmall}) {
-    gap: 20px;
-    margin-bottom: 40px;   
-  }
-
-  @media (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    gap: 20px;
-    margin-bottom: 40px;   
-  }
-
-  @media (max-width: ${DEVICE_BREAKPOINTS.medium}) {
+  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width:${DEVICE_BREAKPOINTS.medium}) {
     gap: 40px;
-    margin-bottom: 80px;   
+    margin-bottom: 70px;
   }
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.large}) {
-    gap: 60px;
-    margin-bottom: 120px; 
-  } */
+  @media (min-width: ${DEVICE_BREAKPOINTS.medium}) and (max-width:${DEVICE_BREAKPOINTS.large}) {  
+    gap: 50px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: ${DEVICE_BREAKPOINTS.large}) {  
+    gap: 50px;
+    margin-bottom: 80px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -41,25 +32,17 @@ export const Title = styled.h1`
   font-weight: 500;
   text-align: center;
 
-  /* @media (max-width:${DEVICE_BREAKPOINTS.extraSmall}) {
-    gap: 20px;
-    margin-bottom: 40px;   
+  @media (min-width:${DEVICE_BREAKPOINTS.extraSmall}) and (max-width:${DEVICE_BREAKPOINTS.small}) {
+    font-size: 1.6rem;
   }
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    gap: 20px;
-    margin-bottom: 40px;   
+  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width:${DEVICE_BREAKPOINTS.medium}) {
+    font-size: 1.8rem;
   }
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.medium}) {
-    gap: 40px;
-    margin-bottom: 80px;   
+  @media (min-width: ${DEVICE_BREAKPOINTS.medium}) {  
+    font-size: 2rem;
   }
-
-  @media (max-width: ${DEVICE_BREAKPOINTS.large}) {
-    gap: 60px;
-    margin-bottom: 120px; 
-  } */
 `;
 
 export const Introduction = styled.div`
@@ -79,31 +62,43 @@ export const Introduction = styled.div`
     border: 2px solid ${({ theme }) => theme.COLORS.HIGHLIGHT};
   }
 
-  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-    flex-direction: column;
-    justify-content: none;
-    gap: 20px;
-
+  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width:${DEVICE_BREAKPOINTS.small}) {
     > img {
-      height: 200px;
-      width: 200px;
-      border: 2px solid ${({ theme }) => theme.COLORS.HIGHLIGHT};
-    }
-  } */
-
-  /* @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    > img {
-      height: 220px;
-      width: 220px;
+      height: 250px;
+      width: 250px;
     }
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
+  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width:${DEVICE_BREAKPOINTS.medium}) {
+    gap: 40px;
+    
     > img {
       height: 300px;
       width: 300px;
     }
-  } */
+  }
+
+  @media (min-width: ${DEVICE_BREAKPOINTS.medium}) and (max-width:${DEVICE_BREAKPOINTS.large}) {  
+    flex-direction: row;
+    gap: 0;
+
+    > img {
+      height: 350px;
+      width: 350px;
+      margin-right: 40px;
+    }
+  }
+
+  @media (min-width: ${DEVICE_BREAKPOINTS.large}) {
+    flex-direction: row;
+    gap: 0;
+
+    > img {
+      height: 350px;
+      width: 350px;
+      margin-right: 40px;
+    }
+  }
 `;
 
 export const List = styled.ul`
@@ -114,15 +109,15 @@ export const List = styled.ul`
 
   gap: 20px;
 
-  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-    gap: 15px;
+  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width:${DEVICE_BREAKPOINTS.medium}) {
+    gap: 25px;
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    gap: 15px;
+  @media (min-width: ${DEVICE_BREAKPOINTS.medium}) and (max-width:${DEVICE_BREAKPOINTS.large}) { 
+    gap: 25px;
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
+  @media (min-width: ${DEVICE_BREAKPOINTS.large}) {
     gap: 30px;
-  } */
+  }
 `;

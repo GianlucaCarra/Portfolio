@@ -97,7 +97,7 @@ export const ScrollFM = styled.div`
   }
 
   @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width:${DEVICE_BREAKPOINTS.medium}) {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 
     > svg {
       margin-top: 7px;

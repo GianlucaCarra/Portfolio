@@ -7,7 +7,6 @@ export const Container = styled.header`
   left: 0;
   z-index: 10;
 
-  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -17,17 +16,10 @@ export const Container = styled.header`
   backdrop-filter: blur(10px);
   display: none;
 
-  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-    display: none;
+
+  @media (min-width:${DEVICE_BREAKPOINTS.medium}) {
+    display: flex;
   }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    padding: 10px;
-  }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
-
-  } */
 `;
 
 export const Navigation = styled.nav`

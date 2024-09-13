@@ -8,18 +8,6 @@ export const Container = styled.div`
   place-items: center;
 
   height: 100vh;
-
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-  /* Estilos para dispositivos pequenos */
-  }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    /* Estilos para tablets e smartphones em orientação paisagem */
-  }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
-    
-  }
 `;
 
 export const Introduction = styled(motion.div)`
@@ -28,51 +16,59 @@ export const Introduction = styled(motion.div)`
   align-items: center;
   justify-content: center;
 
-  gap: 25px;
+  gap: 20px;
 
   > h1 {
-    font-size: 4rem;
+    font-size: 2.2rem;
     font-weight: 500;
     text-align: center;
   }
 
   > h2 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 200;
     text-align: center;
   }
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-    gap: 10px;
-
-    > h1 {
-      font-size: 1.5rem;
-    }
-
-    > h2 {
-      font-size: .8rem;
-    }
-  }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
+  @media (min-width:${DEVICE_BREAKPOINTS.extraSmall}) and (max-width:${DEVICE_BREAKPOINTS.medium}) {
     > h1 {
       font-size: 2.7rem;
-    }
-
-    > h2 {
-      font-size: 1.1rem;
-    }
-  }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
-    > h1 {
-      font-size: 3rem;
     }
 
     > h2 {
       font-size: 1.2rem;
     }
   }
+
+  @media (min-width:${DEVICE_BREAKPOINTS.medium}) and (max-width:${DEVICE_BREAKPOINTS.large}) { 
+    > h1 {
+      font-size: 3rem;
+    }
+
+    > h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width:${DEVICE_BREAKPOINTS.large}) and (max-width:${DEVICE_BREAKPOINTS.extraLarge}) {
+    > h1 {
+      font-size: 3.8rem;
+    }
+
+    > h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: ${DEVICE_BREAKPOINTS.extraLarge}) {
+    > h1 {
+      font-size: 4rem;
+    }
+
+    > h2 {
+      font-size: 1.5rem;
+    }
+  } 
 `;
 
 export const ScrollFM = styled.div`
@@ -91,18 +87,40 @@ export const ScrollFM = styled.div`
     font-size: 2rem;
   }
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-    font-size: .8rem;
-    bottom: 20%;
+  @media (min-width:${DEVICE_BREAKPOINTS.extraSmall}) and (max-width:${DEVICE_BREAKPOINTS.small}) {
+    font-size: 1.2rem;
 
     > svg {
-      margin-top: 1px;
-      font-size: 1.2rem;
+      margin-top: 7px;
+      font-size: 1.6rem;
     }
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    font-size: 1rem;
-    bottom: 15%;
+  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width:${DEVICE_BREAKPOINTS.medium}) {
+    font-size: 1.2rem;
+
+    > svg {
+      margin-top: 7px;
+      font-size: 1.7rem;
+    } 
+  }
+
+  @media (min-width: ${DEVICE_BREAKPOINTS.medium}) and (max-width:${DEVICE_BREAKPOINTS.large}) {
+    font-size: 1.2rem;
+
+    > svg {
+      margin-top: 7px;
+      font-size: 1.9rem;
+    }   
+  }
+
+  @media (min-width: ${DEVICE_BREAKPOINTS.large}) {
+    bottom: 10%;
+    font-size: 1.3rem;
+
+    > svg {
+      margin-top: 7px;
+      font-size: 1.9rem;
+    }   
   }
 `;

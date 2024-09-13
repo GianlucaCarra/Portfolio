@@ -12,14 +12,15 @@ export const Container = styled.div`
   gap: 20px;
   border-radius: 5px;
   width: 100%;
+  max-width: 100%;
 
   background-color: ${({ theme }) => theme.COLORS.BLACK_200};
 
   transition: .4s;
 
   > img {
-    height: 150px;
     max-height: 330px;
+    height: 150px;
     width: 100%;
     object-fit: cover;
     object-position: top;
@@ -48,58 +49,32 @@ export const Container = styled.div`
     border-color: transparent;
   }
 
-  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-    justify-content: none;
-    flex-direction: column;
-
-    padding: 10px;
-    border-radius: 5px;
-    width: 100%;
-    gap: 10px;
-
-    background-color: ${({ theme }) => theme.COLORS.BLACK_200};
-
-    transition: .4s;
-
+  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width:${DEVICE_BREAKPOINTS.small}) {
     > img {
-      height: 150px;
-      max-height: 150px;
-      width: 100%;
-      object-fit: cover;
-      object-position: top;
-      border-radius: 5px;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: -1px;
-      left: -1px;
-      width: 100%;
-      height: 100%;
-      border: 1px solid ${({ theme }) => theme.COLORS.HIGHLIGHT};
+      height: 200px;
     }
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    padding: 10px;
-    
+  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width:${DEVICE_BREAKPOINTS.medium}) {
     > img {
-      height: 190px;
-      max-height: 190px;
+      height: 300px;
     }
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
+  @media (min-width: ${DEVICE_BREAKPOINTS.medium}) {
+    flex-direction: row;
+
     > img {
-      height: 240px;
-      max-height: 240px;
+      height: 300px;
+      width: 50%;
+      max-width: 50%;
     }
-  } */
+  }
 `;
 
 export const Information = styled.div`
   width: 100%;
+  position: relative;
 
   display: flex;
   justify-content: space-between;
@@ -123,41 +98,22 @@ export const Information = styled.div`
     text-overflow: ellipsis;
   }
 
-  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-    gap: 15px;
-    width: 100%;
-    max-width: 100%;
+  @media (min-width: ${DEVICE_BREAKPOINTS.medium}) {
+    gap: 20px;
+    justify-content: start;
 
     .name {
-      font-size: .9rem;
+      text-align: left;
+      font-size: 1.3rem;
     }
 
     .short {
-      font-size: .6rem;
+      height: 160px;
+      max-height: 160px;
+      font-size: 1rem;
+      -webkit-line-clamp: 8;
     }
   }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    gap: 15px;
-
-    .name {
-      font-size: 1.1rem;
-    }
-    
-    .short {
-      font-size: .8rem;
-    }
-  }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
-    .name {
-      font-size: 1.2rem;
-    }
-    
-    .short {
-      font-size: .9rem;
-    }
-  } */
 `;
 
 export const RMButton = styled.a`
@@ -168,7 +124,7 @@ export const RMButton = styled.a`
   background-color: ${({ theme }) => theme.COLORS.HIGHLIGHT};
   transition: .4s;
   text-decoration: none;
-  font-size: .8rem;
+  font-size: .9rem;
   color: ${({ theme }) => theme.COLORS.WHITE};
 
   &:hover {
@@ -177,17 +133,14 @@ export const RMButton = styled.a`
     cursor: pointer;
   }
 
-  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-    padding: 10px;
-    font-size: .8rem;
-  }
-
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    padding: 10px;
-    font-size: .8rem;
-  }
-
   @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
     font-size: .9rem;
-  } */
+  }
+
+  @media (min-width: ${DEVICE_BREAKPOINTS.medium}) {
+    bottom: 0;
+    position: absolute;
+
+    font-size: 1rem;
+  }
 `;

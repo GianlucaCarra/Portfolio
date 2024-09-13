@@ -10,6 +10,10 @@ function ProjectsHome() {
         <h1>
           PROJECTS
         </h1>
+
+        <h2>
+          SEE ALL MY PROJECTS HERE
+        </h2>
       </Introduction>
 
       <ScrollFM

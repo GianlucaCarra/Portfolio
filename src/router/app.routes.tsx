@@ -12,7 +12,7 @@ function AppRoutes() {
         <Route path="/" element={<StartPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/skills" element={<SkillsPage />} />
-        <Route path="/project/1" element={<ProjectPage />} />
+        <Route path="/project/:id" element={<ProjectPage />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

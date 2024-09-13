@@ -12,18 +12,20 @@ export const Container = styled.div`
 
   margin-bottom: 60px;
 
-  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-    gap: 20px;
-    margin-bottom: 40px;   
+  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width:${DEVICE_BREAKPOINTS.medium}) {
+    gap: 40px;
+    margin-bottom: 70px;
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    margin-bottom: 60px;   
+  @media (min-width: ${DEVICE_BREAKPOINTS.medium}) and (max-width:${DEVICE_BREAKPOINTS.large}) {  
+    gap: 50px;
+    margin-bottom: 70px;
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
+  @media (min-width: ${DEVICE_BREAKPOINTS.large}) {  
+    gap: 50px;
     margin-bottom: 80px;
-  } */
+  }
 `;
 
 export const Title = styled.h1`
@@ -31,17 +33,17 @@ export const Title = styled.h1`
   font-weight: 500;
   text-align: center;
 
-  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-    font-size: .9rem;
+  @media (min-width:${DEVICE_BREAKPOINTS.extraSmall}) and (max-width:${DEVICE_BREAKPOINTS.small}) {
+    font-size: 1.6rem;
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    font-size: 1.2rem;
+  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width:${DEVICE_BREAKPOINTS.medium}) {
+    font-size: 1.8rem;
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
-    font-size: 1.4rem;
-  } */
+  @media (min-width: ${DEVICE_BREAKPOINTS.medium}) {  
+    font-size: 2rem;
+  }
 `;
 
 export const ProjectList = styled.div`
@@ -52,15 +54,15 @@ export const ProjectList = styled.div`
   
   gap: 20px;
 
-  /* @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
-    gap: 15px;
+  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width:${DEVICE_BREAKPOINTS.small}) {
+    gap: 20px;
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
-    gap: 15px;
+  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width:${DEVICE_BREAKPOINTS.medium}) {
+    gap: 25px;
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
+  @media (min-width: ${DEVICE_BREAKPOINTS.medium}) {  
     gap: 30px;
-  } */
+  }
 `;

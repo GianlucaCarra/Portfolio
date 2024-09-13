@@ -6,6 +6,7 @@ export const Container = styled.a`
   align-items: center;
 
   gap: 15px;
+  padding: 0 10px;
 
   text-decoration: none;
   color: ${({ theme }) => theme.COLORS.WHITE};
@@ -35,12 +36,7 @@ export const Container = styled.a`
 
   @media (max-width: ${DEVICE_BREAKPOINTS.extraSmall}) {
     font-size: .8rem;
-    padding: 10px;
     gap: 10px;
-
-    > svg {
-      font-size: 1.3rem;
-    }  
     
     &:hover {
       transform: translateY(-2px) !important;
@@ -54,23 +50,11 @@ export const Container = styled.a`
 
   @media (min-width: ${DEVICE_BREAKPOINTS.extraSmall}) and (max-width: ${DEVICE_BREAKPOINTS.small}) {
     font-size: .9rem;
-    padding: 15px;
-
-    > svg {
-      font-size: 1rem;
-    }  
-    
-    &:hover {
-      transform: translateY(-2px) !important;
-    }
+    padding: 0 15px;
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.small}) and (max-width: ${DEVICE_BREAKPOINTS.medium}) {
-    font-size: 1.1rem;
-    padding: 20px;
-
-    > svg {
-      font-size: 1rem;
-    }
+  @media (min-width: ${DEVICE_BREAKPOINTS.small}) {
+    font-size: 1rem;
+    padding: 0 20px;
   }
 `;
