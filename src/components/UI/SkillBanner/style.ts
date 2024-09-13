@@ -70,13 +70,13 @@ export const Information = styled.div`
   }
   
   .short {
-    max-height: 200px;
+    max-height: 220px;
     font-size: .9rem;
     font-weight: 300;
     word-wrap: break-word;
     text-align: center;
     display: -webkit-box;
-    -webkit-line-clamp: 6;
+    -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
