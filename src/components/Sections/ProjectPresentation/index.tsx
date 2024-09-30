@@ -53,7 +53,7 @@ function ProjectPresentation() {
 
         <div className="links-list">
           <Link name={"GitHub Repository"} href={githubURL} />
-          {appURL !== "" && <Link name={"Website Page"} href={"https://github.com/gianlucacarra"} />}
+          {appURL !== "" && <Link name={"Website Page"} href={appURL} />}
         </div>
       </Links>
     </Container>
